@@ -4,7 +4,7 @@ spring:
     name: PRODUCTMICROSERVICE
   data:
     mongodb:
-      uri: mongodb://rootuser:rootpass@127.0.0.1:27017/myntraproducts?authSource=myntraproducts&directConnection=true&serverSelectionTimeoutMS=2000
+      uri: mongodb://rootuser:rootpass@127.0.0.1:27017/myntraproducts?authSource=myntraproducts&authMode=scram-sha1&&directConnection=true&serverSelectionTimeoutMS=2000
     
     redis:
       host: localhost
