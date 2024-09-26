@@ -2,13 +2,6 @@
 server:
   port: 8081
 
-# Spring Datasource Configuration (MySQL)
-spring:
-  application:
-    name: PRODUCTMICROSERVICE
-  data:
-     mongodb:
-       uri: mongodb://BHANU:BHANU123@localhost:27017/myntraproducts?authSource=admin&retryWrites=true&w=majority
 
 
   
