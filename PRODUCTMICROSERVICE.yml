@@ -1,0 +1,34 @@
+# Spring Datasource Configuration (MySQL)
+spring:
+  application:
+    name: PRODUCTMICROSERVICE
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/myntraproducts?authSource=admin
+    redis:
+      host: localhost
+      port: 6379
+
+
+  
+
+# Redis Cache Configuration
+
+  cache:
+    type: redis
+  
+
+
+
+# Pagination and Sorting defaults (optional)
+product:
+  pagination:
+    default-page-size: 10
+  sorting:
+    default-sort-by: price
+
+# Logging Configuration
+logging:
+  level:
+    org.springframework: INFO
+    com.myntra: DEBUG
