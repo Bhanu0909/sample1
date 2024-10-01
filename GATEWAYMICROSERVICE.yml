@@ -10,7 +10,7 @@ spring:
             - Path=/products/**
         - id: customer-service-route  # Unique ID for Customer Microservice route
           uri: lb://CUSTOMERMICROSERVICE
-          
- logging:
+
+logging:
   level:
     '[org.springframework.cloud.gateway]': DEBUG
