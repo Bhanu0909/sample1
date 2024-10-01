@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: GATEWAYSERVERMICROSERVICE
+  cloud:
+    gateway:
+      routes:
+        - id: product-service-route
+          uri: lb://PRODUCTMICROSERVICE
+          predicates:
+            - Path=/products/**
+        - id: customer-service-route  # Unique ID for Customer Microservice route
+          uri: lb://CUSTOMERMICROSERVICE
+          
+ logging:
+  level:
+    '[org.springframework.cloud.gateway]': DEBUG
